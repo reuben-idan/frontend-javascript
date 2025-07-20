@@ -11,4 +11,8 @@ interface Directors extends Teacher {
     numberOfReports: number;
 }
 declare const director1: Directors;
+interface printTeacherFunction {
+    (firstName: string, lastName: string): string;
+}
+declare const printTeacher: printTeacherFunction;
 //# sourceMappingURL=main.d.ts.map

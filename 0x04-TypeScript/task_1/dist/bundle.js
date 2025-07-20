@@ -20,6 +20,12 @@ const director1 = {
     numberOfReports: 17,
 };
 console.log(director1);
+// Implementation of printTeacher
+const printTeacher = (firstName, lastName) => {
+    return `${firstName.charAt(0)}. ${lastName}`;
+};
+// Example usage
+console.log(printTeacher("John", "Doe")); // J. Doe
 
 /******/ })()
 ;
