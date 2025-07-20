@@ -15,4 +15,19 @@ interface printTeacherFunction {
     (firstName: string, lastName: string): string;
 }
 declare const printTeacher: printTeacherFunction;
+interface StudentClassConstructor {
+    new (firstName: string, lastName: string): StudentClassInterface;
+}
+interface StudentClassInterface {
+    workOnHomework(): string;
+    displayName(): string;
+}
+declare class StudentClass implements StudentClassInterface {
+    private firstName;
+    private lastName;
+    constructor(firstName: string, lastName: string);
+    workOnHomework(): string;
+    displayName(): string;
+}
+declare const student: StudentClass;
 //# sourceMappingURL=main.d.ts.map
