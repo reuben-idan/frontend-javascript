@@ -7,4 +7,8 @@ interface Teacher {
     [key: string]: any;
 }
 declare const teacher3: Teacher;
+interface Directors extends Teacher {
+    numberOfReports: number;
+}
+declare const director1: Directors;
 //# sourceMappingURL=main.d.ts.map
